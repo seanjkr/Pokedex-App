@@ -9,3 +9,15 @@ var pokemonList= [
   {name: 'Wartortle', height: 1, type:'Water', HP: 59},
   {name: 'Blastoise', height: 1.6, type:'Water', HP: 79},
 ];
+
+for (pokemonList[i = 0]; i <= 8; i++) {
+  document.write(pokemonList[i].name, ' (Height: '+ pokemonList[i].height +')');
+
+  if (pokemonList[i].height > 1.6) {
+    document.write(' Wow, that\'s big! <br>');
+  }
+
+  if (pokemonList[i].height <= 1.6) {
+    document.write('<br>');
+  }
+}
