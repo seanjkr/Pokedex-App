@@ -10,14 +10,16 @@ var pokemonList= [
   {name: 'Blastoise', height: 1.6, type:'Water', HP: 79},
 ];
 
-for (pokemonList[i = 0]; i <= 8; i++) {
-  document.write(pokemonList[i].name, ' (Height: '+ pokemonList[i].height +')');
+function pokemonLoop(pokemon) {
+  document.write(pokemon.name, ' (Height: '+ pokemon.height +')');
 
-  if (pokemonList[i].height > 1.6) {
+  if (pokemon.height > 1.6) {
     document.write(' Wow, that\'s big! <br>');
   }
 
-  if (pokemonList[i].height <= 1.6) {
+  if (pokemon.height <= 1.6) {
     document.write('<br>');
   }
 }
+
+pokemonList.forEach (pokemonLoop);
