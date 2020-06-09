@@ -1,6 +1,41 @@
 body {
   font-weight: 400;
   font-size: 16px;
-  line-height: 2;
+  line-height: 1.6;
   text-align: center;
+  height: 100vh;
+  margin-top: 135px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'Anton', sans-serif;
+  font-weight: 700;
+  font-size: 140px;
+}
+
+h4, p {
+  display: inline;
+}
+
+.page-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 12;
+  width: 100%;
+  background-color: #00FF7F;
+  height: 121px;
+  line-height: 0.92;
+  letter-spacing: 25px;
+  color: white;
+}
+
+.page-header__item {
+  position: relative;
+  top: -95px;
 }
