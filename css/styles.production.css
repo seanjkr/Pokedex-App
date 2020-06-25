@@ -17,10 +17,6 @@ h1 {
   font-size: 140px;
 }
 
-h4, p {
-  display: inline;
-}
-
 .page-header {
   position: fixed;
   top: 0;
@@ -40,6 +36,12 @@ h4, p {
   top: -95px;
 }
 
-.grass {
-  color: #228B22;
+button {
+  margin-bottom: 4px;
+  width: 95%;
+  height: 50px;
+}
+
+ul {
+  list-style-type: none;
 }
