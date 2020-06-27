@@ -37,9 +37,24 @@ h1 {
 }
 
 button {
-  margin-bottom: 4px;
+  margin-bottom: 15px;
   width: 95%;
-  height: 50px;
+  text-transform: uppercase;
+  font-family: 'Anton', sans-serif;
+  font-size: 45px;
+  color: white;
+  background-color: #98FB98;
+  border: none;
+  padding-top: 0.5px;
+  padding-bottom: 0.5px;
+  transition-duration: 0.5s;
+}
+
+button:hover {
+  filter: brightness(130%);
+  color: black;
+  border: 2px solid black;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 ul {
