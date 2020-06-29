@@ -75,8 +75,8 @@ var pokemonRepository= (function() {
 
     modal.appendChild(modalClose);
     modal.appendChild(pokemonName);
-    modal.appendChild(pokemonPicture);
     modal.appendChild(pokemonHeight);
+    modal.appendChild(pokemonPicture);
     modalContainer.appendChild(modal);
 
     modalContainer.classList.add('is-visible');

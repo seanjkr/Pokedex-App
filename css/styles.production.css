@@ -95,7 +95,8 @@ ul {
   padding: 15px;
   width: 100%;
   max-width: 700px;
-  text-align: left;
+  text-align: center;
+  z-index: 150;
 }
 
 .modal-close {
@@ -115,8 +116,7 @@ ul {
 
 
 .modal-image {
-  float: right;
-  height: 350px;
+  height: 250px;
 }
 
 .top-link {
