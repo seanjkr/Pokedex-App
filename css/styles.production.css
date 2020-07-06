@@ -49,6 +49,7 @@ h1 {
   padding-top: 0.5px;
   padding-bottom: 0.5px;
   transition-duration: 0.5s;
+  cursor: pointer;
 }
 
 .pokemon-button:hover {
