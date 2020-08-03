@@ -71,7 +71,7 @@ var pokemonRepository= (function() {
     pokemonPicture.src = item.imageUrl;
 
     var pokemonHeight = document.createElement('p');
-    pokemonHeight.innerText = 'Height(dm): ' + item.height;
+    pokemonHeight.innerText = 'Height(m): ' + item.height / 10 ;
 
     modal.appendChild(modalClose);
     modal.appendChild(pokemonName);
@@ -166,3 +166,17 @@ var backToTop = (function() {
       scrollToTop();
     }
 })();
+
+function searchFunction() {
+    var input = document.getElementById("search-input");
+    var filter = input.value.toUpperCase();
+    var li = document.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+      var name = li[i].getElementsByClassName("pokemon-button")[0].innerHTML;
+      if (name.toUpperCase().indexOf(filter) === -1) {
+        li[i].style.display = "none";
+      } else {
+        li[i].style.display = "";
+      }
+    }
+}
