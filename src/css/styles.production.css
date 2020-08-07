@@ -4,7 +4,7 @@ body {
   line-height: 1.6;
   height: 100vh;
   margin-top: 135px;
-  background-image: url("../img/pokemon-background.jpg");
+  background-image: url("../../img/pokemon-background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -146,6 +146,10 @@ ul {
   height: 250px;
 }
 
+#top-arrow {
+  width: 30px;
+}
+
 
 @media screen and (max-width: 900px){
 
@@ -192,7 +196,7 @@ ul {
   width: 60px;
   height: 60px;
   background-color: #F8F8F8;
-  z-index: 12;
+  z-index: 16;
 
   &.show {
     visibility: visible;
@@ -205,8 +209,4 @@ ul {
   &:hover {
     background-color: #E8E8E8;
   }
-}
-
-#top-arrow {
-  width: 30px;
 }

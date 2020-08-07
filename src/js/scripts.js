@@ -59,7 +59,7 @@ var pokemonRepository= (function() {
     var modalClose = document.createElement('button');
     modalClose.classList.add('modal-close');
     modalClose.innerText = 'Close';
-    modalClose.addEventListener('click', function(event) {
+    modalClose.addEventListener('click', function() {
     closeModal();
     });
 
@@ -94,7 +94,7 @@ var pokemonRepository= (function() {
 
     pokemonNameButton.classList.add('pokemon-button');
 
-    pokemonNameButton.addEventListener('click', function(event) {
+    pokemonNameButton.addEventListener('click', function() {
       showDetails(pokemon);
     });
 
@@ -145,13 +145,13 @@ var backToTop = (function() {
   const scrollFunc = () => {
     let y = window.scrollY;
     if (y > 0) {
-      scrollToTopButton.className = "top-link show";
+      scrollToTopButton.className = 'top-link show';
     } else {
-      scrollToTopButton.className = "top-link hide";
+      scrollToTopButton.className = 'top-link hide';
     }
   };
 
-  window.addEventListener("scroll", scrollFunc);
+  window.addEventListener('scroll', scrollFunc);
 
   var scrollToTop = () => {
       var c = document.documentElement.scrollTop || document.body.scrollTop;
@@ -168,15 +168,15 @@ var backToTop = (function() {
 })();
 
 function searchFunction() {
-    var input = document.getElementById("search-input");
+    var input = document.getElementById('search-input');
     var filter = input.value.toUpperCase();
-    var li = document.getElementsByTagName("li");
+    var li = document.getElementsByTagName('li');
     for (i = 0; i < li.length; i++) {
-      var name = li[i].getElementsByClassName("pokemon-button")[0].innerHTML;
+      var name = li[i].getElementsByClassName('pokemon-button')[0].innerHTML;
       if (name.toUpperCase().indexOf(filter) === -1) {
-        li[i].style.display = "none";
+        li[i].style.display = 'none';
       } else {
-        li[i].style.display = "";
+        li[i].style.display = '';
       }
     }
 }
